@@ -5,11 +5,11 @@
 #
 #     include 1password
 class onepassword {
-  $host = 'd13itkw33a7sus.cloudfront.net'
-  $path = 'dist/1P/mac/1Password-3.8.21.zip'
+  $host = 'i.agilebits.com'
+  $path = 'dist/1P/mac4/1Password-4.0.2.zip'
 
   package { '1Password':
-    source   => "https://${host}/${path}",
+    source   => "http://${host}/${path}",
     provider => 'compressed_app'
   }
 }
